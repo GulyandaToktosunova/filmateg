@@ -1,0 +1,14 @@
+.wrapper {
+  background: rgb(21, 38, 189);
+  padding: 10px;
+}
+.title {
+  font-size: 30px;
+  margin-left: 30px;
+  text-decoration: none;
+  font-style: initial;
+  color: rgb(255, 255, 255);
+}
+.title:hover {
+  color: rgb(65, 149, 245);
+}

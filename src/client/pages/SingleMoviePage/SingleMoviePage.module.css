@@ -1,0 +1,35 @@
+.t {
+  color: hsl(197, 91%, 50%);
+}
+.h2 {
+  color: rgb(63, 63, 104);
+}
+.Navlink {
+  color: white;
+  padding: 5px;
+  background: rgb(77, 77, 124);
+  border-radius: 5%;
+}
+.Navlink:not(:first-child) {
+  margin-left: 40px;
+}
+.Navlink:hover {
+  background: hwb(227 9% 51%);
+}
+.Navlink:active {
+  background: rgb(61, 201, 49);
+  color: rgb(0, 0, 0);
+}
+.body {
+  background: #000;
+  min-height: calc(100vh - 64px);
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.container {
+  display: flex;
+  border: 3px solid rgb(17, 17, 173);
+  background: none repeat scroll 0 0 #000000;
+  width: 1000px;
+  margin: 0 auto;
+}

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./client/components/Header";
+import HomePage from "./client/pages/HomePage";
+import MoviePage from "./client/pages/MoviePage";
+import SingleMoviePage from "./client/pages/SingleMoviePage";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import FavoritesPage from "./client/pages/FavoritesPage";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movie" element={<MoviePage />} />
+        <Route path="/movies/:id/*" element={<SingleMoviePage />} />
+        <Route path="/Favorites" element={<FavoritesPage />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;
